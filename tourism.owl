@@ -1,0 +1,221 @@
+Prefix(:=<http://www.semanticweb.org/rpftv/ontologies/2023/0/untitled-ontology-2#>)
+Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
+Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
+Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+Prefix(tourism:=<http://www.semanticweb.org/rpftv/ontologies/2023/0/untitled-ontology-2#>)
+
+
+Ontology(<http://www.semanticweb.org/rpftv/ontologies/2023/0/untitled-ontology-2>
+
+Declaration(Class(tourism:ThaiAccommodation))
+Declaration(Class(tourism:ThaiAmphope))
+Declaration(Class(tourism:ThaiAttraction))
+Declaration(Class(tourism:ThaiOTOP))
+Declaration(Class(tourism:ThaiRestaurant))
+Declaration(Class(tourism:ThaiSouvenir))
+Declaration(Class(tourism:ThaiTambon))
+Declaration(Class(tourism:Thaiprovince))
+Declaration(DataProperty(tourism:hasFlower))
+Declaration(DataProperty(tourism:hasImageOfProvince))
+Declaration(DataProperty(tourism:hasLatitudeOfProvince))
+Declaration(DataProperty(tourism:hasLongitudeOfProvince))
+Declaration(DataProperty(tourism:hasMotto))
+Declaration(DataProperty(tourism:hasNameOfProvince))
+Declaration(DataProperty(tourism:hasSeal))
+Declaration(DataProperty(tourism:hasTraditionalNameOfProvince))
+Declaration(DataProperty(tourism:hasTree))
+Declaration(DataProperty(tourism:hasURLOfProvince))
+Declaration(NamedIndividual(tourism:ChaiMai))
+Declaration(NamedIndividual(tourism:NakhonSawan))
+Declaration(NamedIndividual(tourism:PhiChit))
+Declaration(NamedIndividual(tourism:PhitSanulok))
+Declaration(NamedIndividual(tourism:Uthathai))
+############################
+#   Data Properties
+############################
+
+# Data Property: tourism:hasFlower (tourism:hasFlower)
+
+DataPropertyDomain(tourism:hasFlower tourism:Thaiprovince)
+DataPropertyRange(tourism:hasFlower xsd:string)
+
+# Data Property: tourism:hasImageOfProvince (tourism:hasImageOfProvince)
+
+DataPropertyDomain(tourism:hasImageOfProvince tourism:Thaiprovince)
+DataPropertyRange(tourism:hasImageOfProvince xsd:string)
+
+# Data Property: tourism:hasLatitudeOfProvince (tourism:hasLatitudeOfProvince)
+
+DataPropertyDomain(tourism:hasLatitudeOfProvince tourism:Thaiprovince)
+DataPropertyRange(tourism:hasLatitudeOfProvince xsd:float)
+
+# Data Property: tourism:hasLongitudeOfProvince (tourism:hasLongitudeOfProvince)
+
+DataPropertyDomain(tourism:hasLongitudeOfProvince tourism:Thaiprovince)
+DataPropertyRange(tourism:hasLongitudeOfProvince xsd:float)
+
+# Data Property: tourism:hasMotto (tourism:hasMotto)
+
+DataPropertyDomain(tourism:hasMotto tourism:Thaiprovince)
+DataPropertyRange(tourism:hasMotto xsd:string)
+
+# Data Property: tourism:hasNameOfProvince (tourism:hasNameOfProvince)
+
+DataPropertyDomain(tourism:hasNameOfProvince tourism:Thaiprovince)
+DataPropertyRange(tourism:hasNameOfProvince xsd:string)
+
+# Data Property: tourism:hasSeal (tourism:hasSeal)
+
+DataPropertyDomain(tourism:hasSeal tourism:Thaiprovince)
+DataPropertyRange(tourism:hasSeal xsd:string)
+
+# Data Property: tourism:hasTraditionalNameOfProvince (tourism:hasTraditionalNameOfProvince)
+
+DataPropertyDomain(tourism:hasTraditionalNameOfProvince tourism:Thaiprovince)
+DataPropertyRange(tourism:hasTraditionalNameOfProvince xsd:string)
+
+# Data Property: tourism:hasTree (tourism:hasTree)
+
+DataPropertyDomain(tourism:hasTree tourism:Thaiprovince)
+DataPropertyRange(tourism:hasTree xsd:string)
+
+# Data Property: tourism:hasURLOfProvince (tourism:hasURLOfProvince)
+
+DataPropertyDomain(tourism:hasURLOfProvince tourism:Thaiprovince)
+DataPropertyRange(tourism:hasURLOfProvince xsd:string)
+
+
+
+
+############################
+#   Named Individuals
+############################
+
+# Individual: tourism:ChaiMai (tourism:ChaiMai)
+
+ClassAssertion(tourism:Thaiprovince tourism:ChaiMai)
+DataPropertyAssertion(tourism:hasFlower tourism:ChaiMai "Bastard Teak"@en)
+DataPropertyAssertion(tourism:hasFlower tourism:ChaiMai "ทองกวาว"@th)
+DataPropertyAssertion(tourism:hasImageOfProvince tourism:ChaiMai "chiangmai.jpg"^^xsd:string)
+DataPropertyAssertion(tourism:hasLatitudeOfProvince tourism:ChaiMai "18.8"^^xsd:float)
+DataPropertyAssertion(tourism:hasLongitudeOfProvince tourism:ChaiMai "98.98"^^xsd:float)
+DataPropertyAssertion(tourism:hasMotto tourism:ChaiMai "Doi Sutep is Honor, Tradition is Elegant, Blossoms are Beautiful, Precious Name Nakhon Ping"@en)
+DataPropertyAssertion(tourism:hasMotto tourism:ChaiMai "ดอยสุเทพเป็นศรี ประเพณีเป็นสง่า บุปผชาติล้วนงามตา นามล้ำค่านครพิงค์"@th)
+DataPropertyAssertion(tourism:hasNameOfProvince tourism:ChaiMai "Chiang Mai"@en)
+DataPropertyAssertion(tourism:hasNameOfProvince tourism:ChaiMai "เชียงใหม่"@th)
+DataPropertyAssertion(tourism:hasSeal tourism:ChaiMai "White Elephant in Glass Cover"@en)
+DataPropertyAssertion(tourism:hasSeal tourism:ChaiMai "ช้างเผือกในเรือนแก้ว"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:ChaiMai "Jeang Mai"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:ChaiMai "Nop Buri Sri Nakhon Ping Chiang Mai"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:ChaiMai "Rattana Tingsa Api Nawaburi Chiang Mai"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:ChaiMai "Veang Ping"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:ChaiMai "นพบุรีศรีนครพิงค์เชียงใหม่"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:ChaiMai "รัตนติงสาอภินวบุรีเชียงใหม่"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:ChaiMai "เจียงใหม่"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:ChaiMai "เวียงพิงค์"@th)
+DataPropertyAssertion(tourism:hasTree tourism:ChaiMai "Bastard Teak"@en)
+DataPropertyAssertion(tourism:hasTree tourism:ChaiMai "ทองกวาว"@th)
+DataPropertyAssertion(tourism:hasURLOfProvince tourism:ChaiMai "http://www.chiangmai.go.th"^^xsd:string)
+
+# Individual: tourism:NakhonSawan (tourism:NakhonSawan)
+
+ClassAssertion(tourism:Thaiprovince tourism:NakhonSawan)
+DataPropertyAssertion(tourism:hasFlower tourism:NakhonSawan "Lagerstroemia loudoni"@en)
+DataPropertyAssertion(tourism:hasFlower tourism:NakhonSawan "เสลา"@th)
+DataPropertyAssertion(tourism:hasImageOfProvince tourism:NakhonSawan "nakhonsawan.jpg"@th)
+DataPropertyAssertion(tourism:hasLatitudeOfProvince tourism:NakhonSawan "15.7"@th)
+DataPropertyAssertion(tourism:hasLongitudeOfProvince tourism:NakhonSawan "100.07"@th)
+DataPropertyAssertion(tourism:hasMotto tourism:NakhonSawan "Quad City River, Dragon Parade, Bungborapet Rest, Good Taste Fish of Paknampho"@en)
+DataPropertyAssertion(tourism:hasMotto tourism:NakhonSawan "เมืองสี่แคว แห่มังกร พักผ่อนบึงบอระเพ็ด ปลารสเด็ดปากน้ำโพ"@th)
+DataPropertyAssertion(tourism:hasNameOfProvince tourism:NakhonSawan "Nakhon Sawan"@en)
+DataPropertyAssertion(tourism:hasNameOfProvince tourism:NakhonSawan "นครสวรรค์"@th)
+DataPropertyAssertion(tourism:hasSeal tourism:NakhonSawan "Sky Castle"@en)
+DataPropertyAssertion(tourism:hasSeal tourism:NakhonSawan "วิมานลอย"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:NakhonSawan "Chon Ta Wan City"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:NakhonSawan "Pak Nam Pho"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:NakhonSawan "Pra Bang City"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:NakhonSawan "See Kwae City"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:NakhonSawan "ปากน้ำโพ"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:NakhonSawan "เมืองชอนตะวัน"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:NakhonSawan "เมืองพระบาง"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:NakhonSawan "เมืองสี่แคว"@th)
+DataPropertyAssertion(tourism:hasTree tourism:NakhonSawan "Lagerstroemia loudoni"@en)
+DataPropertyAssertion(tourism:hasTree tourism:NakhonSawan "เสลา"@th)
+DataPropertyAssertion(tourism:hasURLOfProvince tourism:NakhonSawan "http://www.nakhonsawan.go.th"@th)
+
+# Individual: tourism:PhiChit (tourism:PhiChit)
+
+ClassAssertion(tourism:Thaiprovince tourism:PhiChit)
+DataPropertyAssertion(tourism:hasFlower tourism:PhiChit "Nymphaea lotus"@en)
+DataPropertyAssertion(tourism:hasFlower tourism:PhiChit "ดอกบัวหลวง"@th)
+DataPropertyAssertion(tourism:hasImageOfProvince tourism:PhiChit "pichit.jpg"@en)
+DataPropertyAssertion(tourism:hasLatitudeOfProvince tourism:PhiChit "16.44"@en)
+DataPropertyAssertion(tourism:hasLongitudeOfProvince tourism:PhiChit "100.35"@en)
+DataPropertyAssertion(tourism:hasMotto tourism:PhiChit "Birthplace of King Sanphet VIII, Boat Racing Festival, Good Buddhism Amulet, Bung See Fai Rest, Loung Por Phet’s Unity Center, Good Taste Ta Koi’s Grapefruit, Famous Rice. Legend of Cha La Wan theCrocodile"@en)
+DataPropertyAssertion(tourism:hasMotto tourism:PhiChit "ถิ่นประสูติพระเจ้าเสือ แข่งเรือยาวประเพณี พระเครื่องดีหลวงพ่อเงิน เพลิดเพลินบึงสีไฟ ศูนย์รวมใจหลวงพ่อเพชร รสเด็ดส้มท่าข่อย ข้าวเจ้าอร่อยลือเลื่อง ต้านานเมืองชาละวัน"@th)
+DataPropertyAssertion(tourism:hasNameOfProvince tourism:PhiChit "Phichit"@en)
+DataPropertyAssertion(tourism:hasNameOfProvince tourism:PhiChit "พิจิตร"@th)
+DataPropertyAssertion(tourism:hasSeal tourism:PhiChit "Sacred figTree and Sra Loung Pool"@en)
+DataPropertyAssertion(tourism:hasSeal tourism:PhiChit "ต้นโพธิ์ริมสระหลวง"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:PhiChit "Cha La Wan City"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:PhiChit "City of Crocodiles"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:PhiChit "เมืองจระเข้"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:PhiChit "เมืองชาละวัน"@th)
+DataPropertyAssertion(tourism:hasTree tourism:PhiChit "Mesua Ferrea"@en)
+DataPropertyAssertion(tourism:hasTree tourism:PhiChit "บุญนาค"@th)
+DataPropertyAssertion(tourism:hasURLOfProvince tourism:PhiChit "http://www.phichit.go.th"@en)
+
+# Individual: tourism:PhitSanulok (tourism:PhitSanulok)
+
+ClassAssertion(tourism:Thaiprovince tourism:PhitSanulok)
+DataPropertyAssertion(tourism:hasFlower tourism:PhitSanulok "Yellow Flamboyant"@en)
+DataPropertyAssertion(tourism:hasFlower tourism:PhitSanulok "นนทรี"@th)
+DataPropertyAssertion(tourism:hasImageOfProvince tourism:PhitSanulok "phitsanulok.jpg"@en)
+DataPropertyAssertion(tourism:hasLatitudeOfProvince tourism:PhitSanulok "16.82"@en)
+DataPropertyAssertion(tourism:hasLongitudeOfProvince tourism:PhitSanulok "100.27"@en)
+DataPropertyAssertion(tourism:hasMotto tourism:PhitSanulok "Great Buddha Chin Na Raj, King Naresuan Birthplace, Houseboat in two sides of Nan River, Pure Luscious Dried Banana, Beautiful Caves and Waterfalls"@en)
+DataPropertyAssertion(tourism:hasMotto tourism:PhitSanulok "พระพุทธชินราชงามเลิศ ถิ่นก้าเนิดพระนเรศวร สองฝั่งน่านล้วนเรือนแพ หวานฉ่ำแท้กล้วยตาก ถ้ำและน้ำตกหลากตระการตา"@th)
+DataPropertyAssertion(tourism:hasNameOfProvince tourism:PhitSanulok "Phitsanulok"@en)
+DataPropertyAssertion(tourism:hasNameOfProvince tourism:PhitSanulok "พิษณุโลก"@th)
+DataPropertyAssertion(tourism:hasSeal tourism:PhitSanulok "Image of Buddha Chin Na Raj"@en)
+DataPropertyAssertion(tourism:hasSeal tourism:PhitSanulok "พระพุทธชินราช"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:PhitSanulok "Pitlok"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:PhitSanulok "Pra Phitsanulok Song Kwae City"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:PhitSanulok "Song Kwae"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:PhitSanulok "Sra Loung Song Kwae City"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:PhitSanulok "นครพิษณุโลกสองแคว"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:PhitSanulok "นครสระหลวงสองแคว"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:PhitSanulok "พิดโลก"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:PhitSanulok "สองแคว"@th)
+DataPropertyAssertion(tourism:hasTree tourism:PhitSanulok "Indian Corck Tree"@en)
+DataPropertyAssertion(tourism:hasTree tourism:PhitSanulok "ปีป"@th)
+DataPropertyAssertion(tourism:hasURLOfProvince tourism:PhitSanulok "http://www.phitsanulok.go.th"@en)
+
+# Individual: tourism:Uthathai (tourism:Uthathai)
+
+ClassAssertion(tourism:Thaiprovince tourism:Uthathai)
+DataPropertyAssertion(tourism:hasFlower tourism:Uthathai "Yellow Silk Cotton"@en)
+DataPropertyAssertion(tourism:hasFlower tourism:Uthathai "สุพรรณิการ์"@th)
+DataPropertyAssertion(tourism:hasImageOfProvince tourism:Uthathai "uthaithani.jpg"@en)
+DataPropertyAssertion(tourism:hasLatitudeOfProvince tourism:Uthathai "15.38"@en)
+DataPropertyAssertion(tourism:hasLongitudeOfProvince tourism:Uthathai "100.03"@en)
+DataPropertyAssertion(tourism:hasMotto tourism:Uthathai "Uthai Thani, City of The Grand Primordial Father, Good Taste Giant Gourami Fish, World Heritage Huai Kha Kang, Watersheds Sa Kae Krang, Famous Cattle Buffalos Market"@en)
+DataPropertyAssertion(tourism:hasMotto tourism:Uthathai "อุทัยธานี เมืองพระชนกจักรี ปลาแรดรสดี ประเพณีเทโว ส้มโอบ้านน้ำตก มรดกโลกห้วยขาแข้ง แหล่งต้นน้ำสะแกกรัง ตลาดนัดดังโคกระบือ"@th)
+DataPropertyAssertion(tourism:hasNameOfProvince tourism:Uthathai "Uthaithani"@en)
+DataPropertyAssertion(tourism:hasNameOfProvince tourism:Uthathai "อุทัยธานี"@th)
+DataPropertyAssertion(tourism:hasSeal tourism:Uthathai "The Grand Primordial Father's Shrine in front of Sa Kae Krang Mountain"@en)
+DataPropertyAssertion(tourism:hasSeal tourism:Uthathai "ศาลพระชนกจักรีหน้าเขาสะแกกรัง"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:Uthathai "City of The Grand Primordial Father"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:Uthathai "U Tai"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:Uthathai "Uthai"@en)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:Uthathai "อุทัย"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:Uthathai "อุไทย"@th)
+DataPropertyAssertion(tourism:hasTraditionalNameOfProvince tourism:Uthathai "เมืองพระชนกจักรี"@th)
+DataPropertyAssertion(tourism:hasTree tourism:Uthathai "Neem Plant"@en)
+DataPropertyAssertion(tourism:hasTree tourism:Uthathai "สะเดา"@th)
+DataPropertyAssertion(tourism:hasURLOfProvince tourism:Uthathai "http://www.uthaithani.go.th"@en)
+
+
+)
